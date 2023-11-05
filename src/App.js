@@ -2,6 +2,7 @@ import "./App.css";
 import { About } from "./components/about";
 import { Clients } from "./components/clients";
 import { ClientSlider } from "./components/clientsslider";
+import { Project } from "./components/project";
 import { Showcase } from "./components/showcase";
 import { Work } from "./components/work";
 import aboutImg from "./media/about.jpg";
@@ -23,6 +24,7 @@ function App() {
       />
       <Work title={"How We Work"} desc={"OUR WORKFLOW"} />
       <Clients title={"Reviews from Our Clients"} desc={"OUR CLIENT SAYS"} />
+      <Project />
     </>
   );
 }

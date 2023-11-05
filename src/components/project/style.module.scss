@@ -1,0 +1,365 @@
+@import "../../styles/container";
+.project {
+  width: 100%;
+}
+.container {
+  @extend %container;
+}
+.title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 9px;
+  padding: 85px 0 35px;
+  h1 {
+    color: #121212;
+    text-align: center;
+    /* H1 */
+    font-family: Playfair Display;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  h3 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: rgba(18, 18, 18, 0.6);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 175%; /* 35px */
+
+    span {
+      display: inline-block;
+      width: 100%;
+      max-width: 67px;
+      height: 2px;
+      flex-shrink: 0;
+      background-color: #ff6a28;
+    }
+  }
+}
+.box_img_text {
+  padding: 35px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 39px;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #ff6a28;
+    color: #fff;
+    border: none;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
+.text {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  h1 {
+    color: #121212;
+
+    font-family: Poppins;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  h2 {
+    /* H1 */
+    font-family: "Playfair Display", serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  p {
+    color: rgba(18, 18, 18, 0.83);
+
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 191%; /* 45.84px */
+  }
+  span {
+    width: 100%;
+    max-width: 312px;
+    height: 2px;
+    flex-shrink: 0;
+    background-color: #ff6a28;
+  }
+}
+.img {
+  width: 50%;
+  aspect-ratio: 2/1.5;
+  flex-shrink: 0;
+  background: #c4c4c4;
+  border-radius: 15px;
+}
+.form {
+  width: 50%;
+  form ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+    li {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 0;
+      flex-direction: column;
+      label {
+        color: rgba(18, 18, 18, 0.83);
+
+        text-align: justify;
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 191%; /* 45.84px */
+      }
+      input {
+        width: 100%;
+        padding: 20px 10px;
+        flex-shrink: 0;
+        border: none;
+        border-radius: 8px;
+        color: rgba(18, 18, 18, 0.5);
+        outline: none;
+        text-align: justify;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 191%; /* 38.2px */
+        background: #f8fafb;
+      }
+    }
+    .li {
+      width: 100%;
+      display: flex;
+      align-items: end;
+      justify-content: flex-end;
+      button {
+        justify-self: flex-end;
+      }
+    }
+  }
+}
+.footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 100px;
+  padding: 150px 0 84px 0;
+  li,
+  p {
+    color: rgba(18, 18, 18, 0.5);
+
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    /* 38.2px */
+  }
+  h3 {
+    color: #121212;
+
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 191%; /* 45.84px */
+  }
+  button {
+    border: none;
+    display: flex;
+    padding: 11px 39px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    background: #ff6a28;
+    color: #fff;
+
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
+.top {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+
+  form {
+    width: 100%;
+    height: 78px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #f8fafb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    input {
+      color: rgba(18, 18, 18, 0.5);
+      outline: none;
+      border: none;
+      text-align: justify;
+      font-family: Poppins;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 191%; /* 38.2px */
+    }
+  }
+  ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.ul1 {
+  width: 100%;
+  max-width: 449px;
+}
+.bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .title {
+    h1 {
+      font-size: 45px;
+    }
+  }
+  .text {
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+  .box_img_text {
+    button {
+      font-size: 16px;
+    }
+  }
+  .top {
+    flex-wrap: wrap;
+    gap: 40px;
+    ul {
+      width: 45%;
+    }
+
+    form {
+      flex-wrap: wrap;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  .box_img_text {
+    flex-direction: column;
+  }
+  .text {
+    width: 100%;
+  }
+  .img {
+    width: 100%;
+  }
+  .form {
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  .top {
+    ul {
+      width: 100%;
+    }
+  }
+  .bottom {
+    span {
+      flex-wrap: wrap;
+    }
+  }
+}
+@media (max-width: 456px) {
+  .title {
+    h1 {
+      font-size: 29px;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+  }
+  .text {
+    h1 {
+      font-size: 30px;
+    }
+    h2 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+}
