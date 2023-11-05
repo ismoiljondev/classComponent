@@ -1,0 +1,19 @@
+@mixin btn(
+  $ptop: 11px,
+  $pleft: 39px,
+  $bgcolor: #ff6a28,
+  $bradius: 5px,
+  $color: #fff,
+  $border: none,
+  $fontsize: 20px
+) {
+  padding: $ptop $pleft;
+  background-color: $bgcolor;
+  border: $border;
+  border-radius: $bradius;
+  color: $color;
+  font-size: $fontsize;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}

@@ -1,0 +1,69 @@
+@import "../../styles/container";
+
+.about {
+  &__container {
+    @extend %container;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  }
+  &__card {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 38px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.76);
+    backdrop-filter: blur(20px);
+    position: absolute;
+    font-size: 10px;
+    width: 420px;
+    h3 {
+      color: #ff6a28;
+      font-size: 4.4em;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    p {
+      color: rgba(18, 18, 18, 0.83);
+      font-size: 2em;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+  &__top {
+    top: 28px;
+    left: 28px;
+  }
+  &__bottom {
+    right: 28px;
+    bottom: 28px;
+  }
+  @media (max-width: 1000px) {
+    &__card {
+      font-size: 8px;
+      padding: 30px;
+    }
+  }
+  @media (max-width: 750px) {
+    &__card {
+      font-size: 6px;
+      padding: 20px;
+      width: 300px;
+    }
+  }
+  @media (max-width: 400px) {
+    &__card {
+      font-size: 4px;
+      padding: 10px;
+      width: 200px;
+      backdrop-filter: blur(0px);
+    }
+  }
+}

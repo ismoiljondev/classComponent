@@ -1,0 +1,63 @@
+@import "../../styles/container";
+
+.work {
+  padding: 50px 0;
+  &__container {
+    @extend %container;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 10px;
+    h2 {
+      color: #121212;
+      font-family: Playfair Display;
+      font-size: 6em;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    p {
+      color: rgba(18, 18, 18, 0.6);
+      font-size: 2em;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 175%; /* 35px */
+    }
+    &__line {
+      display: flex;
+      gap: 17px;
+      align-items: center;
+      & > div {
+        stroke-width: 2px;
+        background-color: #ff6a28;
+        width: 67px;
+        height: 2px;
+      }
+    }
+  }
+  @media (max-width: 1000px) {
+    &__title {
+      font-size: 9px;
+    }
+  }
+  @media (max-width: 800px) {
+    &__title {
+      font-size: 8px;
+    }
+  }
+  @media (max-width: 600px) {
+    &__title {
+      font-size: 6px;
+    }
+  }
+  @media (max-width: 400px) {
+    &__title {
+      font-size: 5px;
+    }
+  }
+}

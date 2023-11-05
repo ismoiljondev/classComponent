@@ -1,0 +1,71 @@
+@import "../../styles/container";
+.navbar {
+  width: 100%;
+  background-color: white;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__container {
+    @extend %container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    input,
+    label {
+      display: none;
+    }
+    h2 {
+      color: #121212;
+      font-family: Playfair Display;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    ul {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      button {
+        margin-left: 2px;
+      }
+      li {
+        position: relative;
+        color: rgba(18, 18, 18, 0.6);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        &:hover {
+          color: #121212;
+        }
+      }
+    }
+  }
+  @media (max-width: 850px) {
+    height: 80px;
+    border-bottom: 1px solid #ff6a28;
+    &__container {
+      label {
+        display: inline;
+      }
+      ul {
+        position: fixed;
+        right: 0;
+        top: 80px;
+        padding-top: 15px;
+        background-color: white;
+        flex-direction: column;
+        border-left: 1px solid #ff6a28;
+        bottom: 0;
+        width: 50%;
+        transform: translate(100%);
+        transition: 0.8s;
+      }
+      input:checked ~ ul {
+        transform: translate(0);
+      }
+    }
+  }
+}

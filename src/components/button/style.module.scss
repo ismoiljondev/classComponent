@@ -1,0 +1,9 @@
+@import "../../styles/btn";
+
+.btn {
+  @include btn();
+  &--white {
+    @include btn($bgcolor: white, $color: #ff6a28);
+    border: 1px solid #ff6a28;
+  }
+}
